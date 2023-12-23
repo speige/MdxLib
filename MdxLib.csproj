@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Devin\Downloads\MdxConverter\MdxLib.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2A1F19B-ADE0-4D23-A9F2-2FFD13719E35}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MdxLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>MdxLib</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CConstants.cs" />
+    <Compile Include="Primitives\CVector2.cs" />
+    <Compile Include="Primitives\CInterval.cs" />
+    <Compile Include="Primitives\CExtent.cs" />
+    <Compile Include="Primitives\CSegment.cs" />
+    <Compile Include="Primitives\CVector4.cs" />
+    <Compile Include="Primitives\CVector3.cs" />
+    <Compile Include="Model\IUnknown.cs" />
+    <Compile Include="Model\CUnknown.cs" />
+    <Compile Include="Model\IObject.cs" />
+    <Compile Include="Model\CObject`1.cs" />
+    <Compile Include="Model\INode.cs" />
+    <Compile Include="Model\CNode`1.cs" />
+    <Compile Include="Model\CParticleEmitter2.cs" />
+    <Compile Include="Model\CNodeContainer.cs" />
+    <Compile Include="Model\CModel.cs" />
+    <Compile Include="Model\CGeoset.cs" />
+    <Compile Include="Model\CCamera.cs" />
+    <Compile Include="Model\CAttachment.cs" />
+    <Compile Include="Model\CTextureAnimation.cs" />
+    <Compile Include="Model\CTexture.cs" />
+    <Compile Include="Model\CGeosetVertex.cs" />
+    <Compile Include="Model\CGeosetExtent.cs" />
+    <Compile Include="Model\CObjectReference`1.cs" />
+    <Compile Include="Model\CParticleEmitter.cs" />
+    <Compile Include="Model\CRibbonEmitter.cs" />
+    <Compile Include="Model\ELightType.cs" />
+    <Compile Include="Model\CGlobalSequence.cs" />
+    <Compile Include="Model\EParticleEmitter2FilterMode.cs" />
+    <Compile Include="Model\CObjectContainer`1.cs" />
+    <Compile Include="Model\CMaterial.cs" />
+    <Compile Include="Model\CGeosetAnimation.cs" />
+    <Compile Include="Model\CDetacher.cs" />
+    <Compile Include="Model\CObjectDetacher`1.cs" />
+    <Compile Include="Model\CNodeDetacher.cs" />
+    <Compile Include="Model\CEvent.cs" />
+    <Compile Include="Model\CMaterialLayer.cs" />
+    <Compile Include="Model\CGeosetGroupNode.cs" />
+    <Compile Include="Model\CGeosetGroup.cs" />
+    <Compile Include="Model\CSequence.cs" />
+    <Compile Include="Model\CCollisionShape.cs" />
+    <Compile Include="Model\CNodeReference.cs" />
+    <Compile Include="Model\CGeosetFace.cs" />
+    <Compile Include="Model\CEventTrack.cs" />
+    <Compile Include="Model\ECollisionShapeType.cs" />
+    <Compile Include="Model\CBone.cs" />
+    <Compile Include="Model\EMaterialLayerFilterMode.cs" />
+    <Compile Include="Model\CLight.cs" />
+    <Compile Include="Model\CHelper.cs" />
+    <Compile Include="ModelFormats\IModelFormat.cs" />
+    <Compile Include="ModelFormats\CMdl.cs" />
+    <Compile Include="ModelFormats\CMdx.cs" />
+    <Compile Include="ModelFormats\CXml.cs" />
+    <Compile Include="ModelFormats\Xml\CUnknown.cs" />
+    <Compile Include="ModelFormats\Xml\CObject.cs" />
+    <Compile Include="ModelFormats\Xml\CNode.cs" />
+    <Compile Include="ModelFormats\Xml\CParticleEmitter.cs" />
+    <Compile Include="ModelFormats\Xml\CModel.cs" />
+    <Compile Include="ModelFormats\Xml\CGeoset.cs" />
+    <Compile Include="ModelFormats\Xml\CCamera.cs" />
+    <Compile Include="ModelFormats\Xml\CParticleEmitter2.cs" />
+    <Compile Include="ModelFormats\Xml\CGeosetGroup.cs" />
+    <Compile Include="ModelFormats\Xml\CGeosetAnimation.cs" />
+    <Compile Include="ModelFormats\Xml\CTextureAnimation.cs" />
+    <Compile Include="ModelFormats\Xml\CGeosetVertex.cs" />
+    <Compile Include="ModelFormats\Xml\CGeosetExtent.cs" />
+    <Compile Include="ModelFormats\Xml\CGeosetGroupNode.cs" />
+    <Compile Include="ModelFormats\Xml\CCollisionShape.cs" />
+    <Compile Include="ModelFormats\Xml\CLoader.cs" />
+    <Compile Include="ModelFormats\Xml\CSaver.cs" />
+    <Compile Include="ModelFormats\Xml\CGeosetFace.cs" />
+    <Compile Include="ModelFormats\Xml\CEventTrack.cs" />
+    <Compile Include="ModelFormats\Xml\CEvent.cs" />
+    <Compile Include="ModelFormats\Xml\CBone.cs" />
+    <Compile Include="ModelFormats\Xml\CRibbonEmitter.cs" />
+    <Compile Include="ModelFormats\Xml\CMaterial.cs" />
+    <Compile Include="ModelFormats\Xml\CAttachment.cs" />
+    <Compile Include="ModelFormats\Xml\CMaterialLayer.cs" />
+    <Compile Include="ModelFormats\Xml\CTexture.cs" />
+    <Compile Include="ModelFormats\Xml\CSequence.cs" />
+    <Compile Include="ModelFormats\Xml\CLight.cs" />
+    <Compile Include="ModelFormats\Xml\CHelper.cs" />
+    <Compile Include="ModelFormats\Xml\CGlobalSequence.cs" />
+    <Compile Include="ModelFormats\Xml\Value\IValue`1.cs" />
+    <Compile Include="ModelFormats\Xml\Value\CInteger.cs" />
+    <Compile Include="ModelFormats\Xml\Value\CVector4.cs" />
+    <Compile Include="ModelFormats\Xml\Value\CVector3.cs" />
+    <Compile Include="ModelFormats\Xml\Value\CVector2.cs" />
+    <Compile Include="ModelFormats\Xml\Value\CFloat.cs" />
+    <Compile Include="ModelFormats\Mdx\CUnknown.cs" />
+    <Compile Include="ModelFormats\Mdx\CObject.cs" />
+    <Compile Include="ModelFormats\Mdx\CNode.cs" />
+    <Compile Include="ModelFormats\Mdx\CBone.cs" />
+    <Compile Include="ModelFormats\Mdx\CSequence.cs" />
+    <Compile Include="ModelFormats\Mdx\CModelVersion.cs" />
+    <Compile Include="ModelFormats\Mdx\CAttachment.cs" />
+    <Compile Include="ModelFormats\Mdx\CParticleEmitter2.cs" />
+    <Compile Include="ModelFormats\Mdx\CTextureAnimation.cs" />
+    <Compile Include="ModelFormats\Mdx\CMetaData.cs" />
+    <Compile Include="ModelFormats\Mdx\CLight.cs" />
+    <Compile Include="ModelFormats\Mdx\CGlobalSequence.cs" />
+    <Compile Include="ModelFormats\Mdx\CSaver.cs" />
+    <Compile Include="ModelFormats\Mdx\CParticleEmitter.cs" />
+    <Compile Include="ModelFormats\Mdx\CModel.cs" />
+    <Compile Include="ModelFormats\Mdx\CGeosetAnimation.cs" />
+    <Compile Include="ModelFormats\Mdx\CLoader.cs" />
+    <Compile Include="ModelFormats\Mdx\CCollisionShape.cs" />
+    <Compile Include="ModelFormats\Mdx\CPivotPoint.cs" />
+    <Compile Include="ModelFormats\Mdx\CModelInfo.cs" />
+    <Compile Include="ModelFormats\Mdx\CEvent.cs" />
+    <Compile Include="ModelFormats\Mdx\CTexture.cs" />
+    <Compile Include="ModelFormats\Mdx\CHelper.cs" />
+    <Compile Include="ModelFormats\Mdx\CRibbonEmitter.cs" />
+    <Compile Include="ModelFormats\Mdx\CMaterial.cs" />
+    <Compile Include="ModelFormats\Mdx\CGeoset.cs" />
+    <Compile Include="ModelFormats\Mdx\CCamera.cs" />
+    <Compile Include="ModelFormats\Mdx\Value\IValue`1.cs" />
+    <Compile Include="ModelFormats\Mdx\Value\CVector2.cs" />
+    <Compile Include="ModelFormats\Mdx\Value\CFloat.cs" />
+    <Compile Include="ModelFormats\Mdx\Value\CInteger.cs" />
+    <Compile Include="ModelFormats\Mdx\Value\CVector4.cs" />
+    <Compile Include="ModelFormats\Mdx\Value\CVector3.cs" />
+    <Compile Include="ModelFormats\Mdl\CUnknown.cs" />
+    <Compile Include="ModelFormats\Mdl\CObject.cs" />
+    <Compile Include="ModelFormats\Mdl\CModelVersion.cs" />
+    <Compile Include="ModelFormats\Mdl\CSequence.cs" />
+    <Compile Include="ModelFormats\Mdl\CNode.cs" />
+    <Compile Include="ModelFormats\Mdl\CCollisionShape.cs" />
+    <Compile Include="ModelFormats\Mdl\CParticleEmitter2.cs" />
+    <Compile Include="ModelFormats\Mdl\CModelInfo.cs" />
+    <Compile Include="ModelFormats\Mdl\CMetaData.cs" />
+    <Compile Include="ModelFormats\Mdl\CEvent.cs" />
+    <Compile Include="ModelFormats\Mdl\CAttachment.cs" />
+    <Compile Include="ModelFormats\Mdl\CTextureAnimation.cs" />
+    <Compile Include="ModelFormats\Mdl\ECondition.cs" />
+    <Compile Include="ModelFormats\Mdl\CTexture.cs" />
+    <Compile Include="ModelFormats\Mdl\CParticleEmitter.cs" />
+    <Compile Include="ModelFormats\Mdl\CBone.cs" />
+    <Compile Include="ModelFormats\Mdl\CLoader.cs" />
+    <Compile Include="ModelFormats\Mdl\CGeosetAnimation.cs" />
+    <Compile Include="ModelFormats\Mdl\CRibbonEmitter.cs" />
+    <Compile Include="ModelFormats\Mdl\CHelper.cs" />
+    <Compile Include="ModelFormats\Mdl\CLight.cs" />
+    <Compile Include="ModelFormats\Mdl\CGlobalSequence.cs" />
+    <Compile Include="ModelFormats\Mdl\CGeoset.cs" />
+    <Compile Include="ModelFormats\Mdl\CCamera.cs" />
+    <Compile Include="ModelFormats\Mdl\CPivotPoint.cs" />
+    <Compile Include="ModelFormats\Mdl\CModel.cs" />
+    <Compile Include="ModelFormats\Mdl\CMaterial.cs" />
+    <Compile Include="ModelFormats\Mdl\CSaver.cs" />
+    <Compile Include="ModelFormats\Mdl\Value\IValue`1.cs" />
+    <Compile Include="ModelFormats\Mdl\Value\CInteger.cs" />
+    <Compile Include="ModelFormats\Mdl\Value\CVector4.cs" />
+    <Compile Include="ModelFormats\Mdl\Value\CVector3.cs" />
+    <Compile Include="ModelFormats\Mdl\Value\CFloat.cs" />
+    <Compile Include="ModelFormats\Mdl\Value\CVector2.cs" />
+    <Compile Include="ModelFormats\Mdl\Value\CColor.cs" />
+    <Compile Include="ModelFormats\Mdl\Token\EType.cs" />
+    <Compile Include="ModelFormats\Attacher\IAttacher.cs" />
+    <Compile Include="ModelFormats\Attacher\CObjectAttacher`1.cs" />
+    <Compile Include="ModelFormats\Attacher\CNodeAttacher.cs" />
+    <Compile Include="ModelFormats\Attacher\CAttacherContainer.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\CDetachObject`1.cs" />
+    <Compile Include="Command\CAttachObject`1.cs" />
+    <Compile Include="Command\CSetModelField`1.cs" />
+    <Compile Include="Command\CCommandGroup.cs" />
+    <Compile Include="Command\CSetObjectField`2.cs" />
+    <Compile Include="Command\CSetAnimatorField`2.cs" />
+    <Compile Include="Command\CDetachNode.cs" />
+    <Compile Include="Command\CSetNodeField`2.cs" />
+    <Compile Include="Command\CAttachNode.cs" />
+    <Compile Include="Command\ObjectContainer\CInsert`1.cs" />
+    <Compile Include="Command\ObjectContainer\CRemoveAt`1.cs" />
+    <Compile Include="Command\ObjectContainer\CClear`1.cs" />
+    <Compile Include="Command\ObjectContainer\CAdd`1.cs" />
+    <Compile Include="Command\ObjectContainer\CSet`1.cs" />
+    <Compile Include="Command\Animator\CInsert`1.cs" />
+    <Compile Include="Command\Animator\CClear`1.cs" />
+    <Compile Include="Command\Animator\CRemoveAt`1.cs" />
+    <Compile Include="Command\Animator\CSet`1.cs" />
+    <Compile Include="Animator\CAnimator`1.cs" />
+    <Compile Include="Animator\CTime.cs" />
+    <Compile Include="Animator\EInterpolationType.cs" />
+    <Compile Include="Animator\CAnimatable`1.cs" />
+    <Compile Include="Animator\CAnimatorNode`1.cs" />
+    <Compile Include="Animator\Animatable\CFloat.cs" />
+    <Compile Include="Animator\Animatable\CInteger.cs" />
+    <Compile Include="Animator\Animatable\CVector4.cs" />
+    <Compile Include="Animator\Animatable\CQuaternion.cs" />
+    <Compile Include="Animator\Animatable\CVector3.cs" />
+    <Compile Include="Animator\Animatable\CVector2.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
